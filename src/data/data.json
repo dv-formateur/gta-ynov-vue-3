@@ -1,0 +1,19 @@
+[{
+	"id": "adrouard",
+	"role": "salarie",
+	"nom": "Drouard",
+	"prenom": "Antoine",
+    "mdp": "adrouard",
+    "doB": "08/06/1997",
+    "adresse": "4 rue de Rezé",
+    "telephone": "+33 6 80 08 80 08",
+    "mail": "adrouard@mail.com",
+    "hJour": 7,
+    "hSemaine": "tbd",
+    "hAn": "tbd",
+	"dateDeb": "01/01/2016",
+	"dateFin": "31/12/2020",
+    "absence": [ "01/02/2017", "02/02/2017", "21/07/2018" ],
+    "conge": [ "07/11/2018", "08/11/2018", "09/11/2018" ]
+  }
+]

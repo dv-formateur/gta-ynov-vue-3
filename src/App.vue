@@ -1,4 +1,65 @@
 <template>
+    <div id="app">
+        <div id="nav">
+            <router-link v-if="authenticated" to="/login" v-on:click.native="logout()" replace>Logout</router-link>
+        </div>
+        <router-view @authenticated="setAuthenticated" />
+    </div>
+</template>
+
+<script>
+	import Vue from 'vue'
+	import BootstrapVue from 'bootstrap-vue'
+
+	Vue.use(BootstrapVue);
+	import 'bootstrap/dist/css/bootstrap.css'
+	import 'bootstrap-vue/dist/bootstrap-vue.css'
+</script>
+
+<script>
+    export default {
+        name: 'App',
+        data() {
+            return {
+                authenticated: false,
+                mockAccount: {
+                    username: "adrouard",
+                    password: "adrouard"
+                }
+            }
+        },
+        mounted() {
+            if(!this.authenticated) {
+                this.$router.replace({ name: "login" });
+            }
+		},
+		
+        methods: {
+            setAuthenticated(status) {
+                this.authenticated = status;
+            },
+            logout() {
+                this.authenticated = false;
+            }
+        }
+    }
+</script>
+
+<style>
+    body {
+        background-color: #F0F0F0;
+    }
+    h1 {
+        padding: 0;
+        margin-top: 0;
+    }
+    #app {
+        width: 1024px;
+        margin: auto;
+    }
+</style>
+
+<!--<template>
   <div id="app">
     <div id="nav">
       <router-link to="/">Home</router-link> |
@@ -28,4 +89,4 @@
 #nav a.router-link-exact-active {
   color: #42b983;
 }
-</style>
+</style>-->
