@@ -17,21 +17,27 @@
 </script>
 
 <script>
+	import json from './data/data.json'
     export default {
         name: 'App',
         data() {
             return {
                 authenticated: false,
-                mockAccount: {
-                    username: "adrouard",
-                    password: "adrouard"
-                }
+				users: json,
+				identifiants: [],
+				motdepasses: [],
+				idNum: null,
             }
         },
         mounted() {
             if(!this.authenticated) {
                 this.$router.replace({ name: "login" });
-            }
+			}
+			
+			for (let i = 0; i < this.users.length; i++) {
+				this.identifiants.push(this.users[i].id)
+				this.motdepasses.push(this.users[i].mdp)
+			}
 		},
 		
         methods: {
@@ -58,35 +64,3 @@
         margin: auto;
     }
 </style>
-
-<!--<template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
-  </div>
-</template>
-
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-#nav {
-  padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
-</style>-->

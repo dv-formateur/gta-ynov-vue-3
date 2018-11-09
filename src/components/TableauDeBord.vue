@@ -1,14 +1,14 @@
 <template>
-	<div class="hello">
-		<table class="table" v-if="this.users !== null">
+	<div>
+		<table class="table" v-if="this.users[this.$parent.$parent.$parent.$parent.idNum] !== null">
 			<tbody>
 				<tr>
 					<td>Date de début</td>
-					<td>{{this.users[0].dateDeb}}</td>
+					<td>{{this.users[this.$parent.$parent.$parent.$parent.idNum].dateDeb}}</td>
 				</tr>
 				<tr>
 					<td>Date de fin</td>
-					<td>{{this.users[0].dateFin}}</td>
+					<td>{{this.users[this.$parent.$parent.$parent.$parent.idNum].dateFin}}</td>
 				</tr>
 				<tr>
 					<td>Nombre d'heures hebdomadaires</td>
@@ -40,7 +40,7 @@ export default {
 	name: 'FicheSalarie',
 	props: {},
 	created() {
-		
+
 	},
 	mounted: function() {
 

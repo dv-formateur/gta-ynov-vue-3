@@ -15,19 +15,21 @@
                 input: {
                     username: "adrouard",
                     password: "adrouard"
-                }
+				},
             }
         },
         methods: {
             login() {
                 if(this.input.username != "" && this.input.password != "") {
-                    if(this.input.username == this.$parent.mockAccount.username && this.input.password == this.$parent.mockAccount.password) {
-                        this.$emit("authenticated", true);
-                        this.$router.replace({ name: "secure" });
-                    } else {
-                        console.log("The username and / or password is incorrect");
-                    }
+					for (let index = 0; index < this.$parent.identifiants.length; index++) {
+						if(this.input.username == this.$parent.identifiants[index] && this.input.password == this.$parent.motdepasses[index]) {
+							this.$parent.idNum = index
+							this.$emit("authenticated", true);
+							this.$router.replace({ name: "secure" });
+						}
+					}
                 } else {
+					//eslint-disable-next-line
                     console.log("A username and password must be present");
                 }
             }
