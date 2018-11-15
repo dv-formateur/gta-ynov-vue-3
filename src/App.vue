@@ -60,7 +60,7 @@
         margin-top: 0;
     }
     #app {
-        width: 1024px;
+        width: 100%;
         margin: auto;
     }
 </style>
