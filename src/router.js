@@ -24,6 +24,11 @@ export default new Router({
 		path: "/secure",
 		name: "secure",
 		component: SecureComponent
+	},
+	{
+		path: "/responsable",
+		name: "responsable",
+		component: SecureComponent
 	}
 	/*{
       path: '/',

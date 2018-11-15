@@ -15,5 +15,23 @@
 	"dateFin": "2019-12-31",
     "absence": [ "2018-11-01", "2018-11-02", "2018-11-05" ],
     "conge": [ "2018-11-07", "2018-11-08", "2018-11-09" ]
+  },
+  {
+	"id": "resp",
+	"role": "responsable",
+	"nom": "Drouard",
+	"prenom": "Hervé",
+    "mdp": "resp",
+    "doB": "06-02-1992",
+    "adresse": "52 rue des lilas Paris",
+    "telephone": "+33 6 58 92 03 04",
+    "mail": "resp@mail.com",
+    "hJour": 7,
+    "hSemaine": "tbd",
+    "hAn": "tbd",
+	"dateDeb": "2015-01-01",
+	"dateFin": "2019-12-31",
+    "absence": [ "2018-11-01", "2018-11-02", "2018-11-05" ],
+    "conge": [ "2018-11-07", "2018-11-08", "2018-11-09" ]
   }
 ]

@@ -25,7 +25,11 @@
 						if(this.input.username == this.$parent.identifiants[index] && this.input.password == this.$parent.motdepasses[index]) {
 							this.$parent.idNum = index
 							this.$emit("authenticated", true);
-							this.$router.replace({ name: "secure" });
+							if (this.$parent.users[index].role == "salarie") {
+								this.$router.replace({ name: "secure" });								
+							} else {
+								this.$router.replace({ name: "responsable"})
+							}
 						}
 					}
                 } else {
