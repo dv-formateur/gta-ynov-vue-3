@@ -3,7 +3,7 @@
 		<h1>Zone salarié</h1>
 		<p>
 			<b-card no-body>
-				<b-tabs pills card>
+				<b-tabs fill card>
 					<b-tab title="Fiche salarié" active>
 						<FicheSalarie></FicheSalarie>
 					</b-tab>

@@ -19,7 +19,7 @@ export default {
 		FullCalendar
 	},
 	
-	created() {
+	created() { //TODO - ne plus utiliser $parent ... pour permettre un appel avec utilisateur changeant pour responsable
 		if(this.$parent.$parent.$parent.$parent.idNum!=null) {
 			for (let i = 0; i < this.users[this.$parent.$parent.$parent.$parent.idNum].conge.length; i++) {
 				this.events.push({

@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import LoginComponent from "./views/Login.vue"
 import SecureComponent from "./views/Secure.vue"
+import ResponsableComponent from "./views/Responsable.vue"
 
 Vue.use(Router)
 
@@ -28,7 +29,7 @@ export default new Router({
 	{
 		path: "/responsable",
 		name: "responsable",
-		component: SecureComponent
+		component: ResponsableComponent
 	}
 	/*{
       path: '/',
