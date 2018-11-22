@@ -15,3 +15,8 @@ Bilan mi-journé: La connexion et les informations des autres pages de la partie
 __________________________________________________________________________________________________________________________________________
 
 Vendredi 16/11 - Commencer à mettre en place la partie responsable. Eventuellement regarder comment gérer la gestion responsive du composant planning.
+
+Bilan mi-journé: Debut de la partie responsable.
+__________________________________________________________________________________________________________________________________________
+
+Jeudi 22/11 - Modification des données d'un utilisateur, refonte partielle du composant planning pour une utilisation dans la partie responsable où on choisit le planning de quel employé on souhaite voir.
