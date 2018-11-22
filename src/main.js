@@ -6,6 +6,10 @@ import './registerServiceWorker'
 import BootstrapVue from 'bootstrap-vue'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
+
+import FullCalendar from 'vue-full-calendar'
+
+Vue.use(FullCalendar)
 Vue.use(BootstrapVue);
 
 Vue.config.productionTip = false
