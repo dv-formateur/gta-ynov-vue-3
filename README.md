@@ -25,3 +25,8 @@ Bilan mi-journé: Debut de la partie responsable.
 __________________________________________________________________________________________________________________________________________
 
 Jeudi 22/11 - Modification des données d'un utilisateur, refonte partielle du composant planning pour une utilisation dans la partie responsable où on choisit le planning de quel employé on souhaite voir.
+
+Bilan: refonte planning faite ansi que la partie responsable où on choisit l'employé souhaité. Ainsi que quelques modifications des données. Début ajout sur le planning selon type de contrat.
+__________________________________________________________________________________________________________________________________________
+
+Vendredi 23/11 - Continuer l'ajout sur le planning selon type de contrat, puis gérer les compteurs.
